@@ -1,13 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Cadastro de Contas - League of Legends</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Cadastro de Contas - League of Legends</h1>
+    </header>
+
+    <main>
+        <section id="form-section">
+            <h2 id="form-section-title">Cadastrar Nova Conta</h2>
+            <form id="account-form">
+                <div>
+                    <label for="nick">Nick do Usuário:</label>
+                    <input type="text" id="nick" required>
+                </div>
+
+                <div>
+                    <label for="skins">Quantidade de Skins:</label>
+                    <input type="number" id="skins" required>
+                </div>
+
+                <div>
+                    <label for="champions">Quantidade de Campeões:</label>
+                    <input type="number" id="champions" required>
+                </div>
+
+                <div>
+                    <label for="soloQ">Elo da Solo Q:</label>
+                    <input type="text" id="soloQ" required>
+                </div>
+
+                <div>
+                    <label for="flex">Elo da Flex:</label>
+                    <input type="text" id="flex" required>
+                </div>
+
+                <div>
+                    <label for="level">Nível da Conta:</label>
+                    <input type="number" id="level" required>
+                </div>
+
+                <div>
+                    <label for="icons">Quantidade de Ícones:</label>
+                    <input type="number" id="icons" required>
+                </div>
+
+                <div>
+                    <label for="wards">Quantidade de Sentinelas:</label>
+                    <input type="number" id="wards" required>
+                </div>
+
+                <div>
+                    <label for="highestMastery">Maior Maestria:</label>
+                    <input type="text" id="highestMastery" placeholder="Ex: Yasuo, Yone, Talon" required>
+                </div>
+
+                <button id="btn-submit" type="submit">Cadastrar Conta</button>
+            </form>
+        </section>
+
+        <section id="accounts-section">
+            <h2 id="accounts-section-title">Lista de Contas Cadastradas</h2>
+            <ul id="account-list" aria-live="polite"></ul>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
