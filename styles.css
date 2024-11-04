@@ -1,0 +1,152 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Estilo global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3e8483cc;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Estilo principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+/* Seção do formulário */
+#form-section {
+    width: 70%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff75;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    font-size: 1.7em;
+    color: #3ED715;
+    text-align: center;
+    
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+form label {
+    color: #46d120;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Botão para cadastrar contas */
+#btn-submit {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: all 150ms ease-in-out;
+}
+
+#btn-submit:hover {
+    background-color: #46d120e8;
+    box-shadow: 0 0 10px 0 #46d120e8 inset, 0 0 10px 4px #46d120e8;
+}
+
+/* Titulo contas cadastradas*/
+#accounts-section{
+    margin-top: 15px;
+}
+/* Lista de contas cadastradas */
+#account-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+    
+}
+
+#account-list li {
+    background-color: #f9f9f9dc;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#account-list li strong {
+    color: #4CAF50;
+}
+
+#account-list button {
+    padding: 5px 10px;
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+#account-list button:hover {
+    background-color: #ff1744;
+    box-shadow: 0 0 10px 0 #ff1744 inset, 0 0 10px 4px #ff1744;
+}
