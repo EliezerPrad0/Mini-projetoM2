@@ -161,3 +161,136 @@ form input {
     background-color: #ff1744;
     box-shadow: 0 0 10px 0 #ff1744 inset, 0 0 10px 4px #ff1744;
 }
+
+/* ----------------- MEDIA QUERIES ----------------- */
+
+/* Até 1179px */
+@media (max-width: 1179px) {
+    #form-section {
+        width: 90%;
+    }
+    
+    form input {
+        font-size: 0.95em;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    section h2 {
+        font-size: 1.4em;
+    }
+
+    #btn-submit {
+        font-size: 0.9em;
+    }
+
+    #account-list li {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
+
+/* Até 767px */
+@media (max-width: 767px) {
+    #form-section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+
+    form label, form input {
+        font-size: 0.85em;
+    }
+
+    #btn-submit {
+        font-size: 0.85em;
+        padding: 8px;
+    }
+
+    #account-list li {
+        flex-direction: column;
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    #account-list button {
+        font-size: 0.8em;
+        padding: 5px 8px;
+        margin-bottom: 5px;
+    }
+}
+
+/* Resolução de até 3840px */
+@media (min-width: 2560px) {
+    main {
+        max-width: 1200px;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    section h2 {
+        font-size: 2.5em;
+    }
+
+    form label, form input {
+        font-size: 1.5em;
+    }
+
+    #btn-submit {
+        font-size: 1.3em;
+        padding: 12px;
+    }
+
+    #account-list li {
+        font-size: 1.3em;
+    }
+
+    #account-list button {
+        font-size: 1.1em;
+        padding: 10px 15px;
+    }
+}
+
+/* Resolução de 1440px a 2559px */
+@media (min-width: 1440px) and (max-width: 2559px) {
+    main {
+        max-width: 1000px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    form label, form input {
+        font-size: 1.2em;
+    }
+
+    #btn-submit {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+
+    #account-list li {
+        font-size: 1.1em;
+    }
+
+    #account-list button {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
